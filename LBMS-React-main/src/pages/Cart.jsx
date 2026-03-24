@@ -60,7 +60,7 @@ const Cart = () => {
           returnDate: null,
           status: "borrowed",
           days: item.days,
-          quantity: item.quantity,
+          quantity: item.quantity, // thêm quantity
           totalPrice: parseFloat(
             (book.rentalPrice * item.days * item.quantity).toFixed(2),
           ),

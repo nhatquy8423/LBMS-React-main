@@ -58,7 +58,7 @@ const BorrowHistory = () => {
       if (book)
         await booksAPI.update(book.id, {
           ...book,
-          stock: book.stock + (borrow.quantity || 1),
+          stock: book.stock + (borrow.quantity || 1), // logic cập nhật trả sách
         });
       await fetchData();
       toast.success("Book returned successfully!");
